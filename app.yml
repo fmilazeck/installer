@@ -1,13 +1,4 @@
 ---
-- name: Set up web server
-  hosts: all
-  become: true
-  vars:
-    ansible_user: "{{ deploy_user }}"
-  roles:
-    - letsencrypt
-    - nginx
-
 - name: Set up CONSUL
   hosts: all
   become: true
