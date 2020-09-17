@@ -1,12 +1,12 @@
 ---
 app_name: consul
-#domain: your_domain.com
+domain: bamberg-mitgestalten.de
 
 server_hostname: "{{ domain | default(ansible_default_ipv4.address) }}"
 
 # Server Timzone + Locale
-timezone: Europe/Madrid
-locale: en_US.UTF-8
+timezone: Europe/Berlin
+locale: de_DE.UTF-8
 
 # General settings
 env: production
@@ -44,4 +44,4 @@ smtp_password:       "password"
 smtp_authentication: "plain"
 
 #LetsEncrypt
-#letsencrypt_email: "your_email@example.com"
+letsencrypt_email: "felix.milazeck@24creators.de"
